@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace App\Form\type;
+namespace App\Form\Type;
 
-use App\Entity\Product\ProductInterface;
+use App\Entity\ProductInterface;
 use Sylius\Bundle\ProductBundle\Form\Type\ProductType;
 use Symfony\Component\Form\AbstractTypeExtension;
 use Symfony\Component\Form\Extension\Core\Type\ChoiceType;

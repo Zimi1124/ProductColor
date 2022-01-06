@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace App\Entity\Product;
+namespace App\Entity;
 
 interface ProductInterface
 {
