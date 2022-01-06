@@ -12,10 +12,17 @@ use Sylius\Component\Product\Model\ProductTranslationInterface;
  * @ORM\Entity
  * @ORM\Table(name="sylius_product")
  */
-class Product extends BaseProduct
+class Product extends BaseProduct implements ProductInterface
 {
-    protected function createTranslation(): ProductTranslationInterface
+    protected ?string $color;
+
+    public function getColor(): ?string
     {
-        return new ProductTranslation();
+        return $this->color;
+    }
+
+    public function setColor(?string $color): void
+    {
+        $this->color = $color;
     }
 }
