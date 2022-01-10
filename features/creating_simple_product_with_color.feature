@@ -14,6 +14,7 @@ Feature: Creating a product with color
         When I specify its code as "DINO_HOODIE"
         And I name it "Dino Hoodie" in "English (United States)"
         And I set its slug to "dino-hoodie" in "English (United States)"
+        And I set color to "Green"
         And I set its price to "$66.00" for "United States" channel
         And I set its original price to "$201.00" for "United States" channel
         And I add it
